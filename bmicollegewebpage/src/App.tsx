@@ -1,10 +1,16 @@
 
 import './App.css';
+import Navbar from './pages/Navbar';
 import Routing from './Routing';
 
 function App() {
   return (
-  <Routing/>
+  <div className='row'>
+    <div className='float-right'>
+      <Navbar/>
+    </div>
+    <Routing/>
+  </div>
   );
 }
 
