@@ -1,4 +1,5 @@
 
+import { useRoutes } from 'react-router';
 import './App.css';
 import Navbar from './pages/Navbar';
 import Routing from './Routing';
@@ -9,7 +10,7 @@ function App() {
     <div className='float-right'>
       <Navbar/>
     </div>
-    <Routing/>
+    {useRoutes(Routing)}
   </div>
   );
 }

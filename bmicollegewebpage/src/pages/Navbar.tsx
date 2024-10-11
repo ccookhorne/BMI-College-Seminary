@@ -1,7 +1,26 @@
-import React from "react"
 import { useNavigate } from "react-router-dom";
+
+
+
+
+
 const Navbar = () =>{
     const navigate = useNavigate();
+
+
+
+    const navigationCheck= (url: string) =>{
+      if(url === "/home"){
+        navigate(url)
+      }
+      else if ( url === "/student-life"){
+        navigate(url)
+      }
+    }
+
+
+
+
 
     return (
         <>
@@ -14,10 +33,10 @@ const Navbar = () =>{
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-        <button className="nav-lin" onClick={() => navigate("/home")}>Home <span className="sr-only">(current)</span></button>
+        <button className="nav-lin" onClick={() =>navigationCheck("/home")}>Home <span className="sr-only">(current)</span></button>
       </li>
       <li className="nav-item">
-      <button className="nav-lin" onClick={() => navigate("/student-life")}>Home <span className="sr-only">(current)</span></button>
+      <button className="nav-lin" onClick={() => navigationCheck("/student-life")}>Home <span className="sr-only">(current)</span></button>
       </li>
     </ul>
   </div>
