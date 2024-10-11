@@ -12,6 +12,7 @@ const Home = () => {
         <div className="iDontCare">
             You and you alone
         </div>
+        
 
         {/* <img src={logo1} alt="../../public/logo192.png" /> */}
         
